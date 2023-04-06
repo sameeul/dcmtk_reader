@@ -205,7 +205,7 @@ void test_3(){
 }
 
 void test_4(){
-    std::string file_path{"/mnt/hdd8/axle/data/dicom_test_data/seg/p0_y1_r1_c0.dicom"};
+    std::string file_path{"/mnt/hdd8/axle/dev/dcmtk_reader/data/pydicom-data/data/JPEG-LL.dcm"};
  
     auto tl = NyxusGrayscaleDicomLoader<uint16_t>(1, file_path);
     std::cout <<tl.tileHeight(0)<<std::endl;
@@ -244,6 +244,6 @@ DJDecoderRegistration::cleanup(); // deregister JPEG codecs
  }
 
 int main(){
-    test_2();
+    test_4();
     
 }
